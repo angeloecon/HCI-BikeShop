@@ -1,0 +1,21 @@
+.modal-background{
+  width: 100%;
+  height: 100vh;
+  z-index: 0;
+  position: relative;
+}
+
+.item-container{
+
+  /*  */
+  gap: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: gray;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 1rem;
+}

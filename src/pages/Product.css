@@ -1,4 +1,5 @@
 .product-container{
+  padding-top: 60px;
   display: flex;
   flex-direction: column;
   gap: 10rem;
@@ -24,6 +25,9 @@
 
 @media (max-width: 600px) {
   .p-logo{
-    height: 10rem;
+    height: 9rem;
+  }
+  .product-container{
+    padding-top: 0px;
   }
 }

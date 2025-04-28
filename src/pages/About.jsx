@@ -4,8 +4,6 @@ import AboutForm from '../components/AboutForm'
 import Footer from '../components/Footer'
 import './About.css'
 
-import Item from '../components/Item'
-
 // import Item from '../components/Item'
 const About = () => {
   return (
@@ -13,7 +11,6 @@ const About = () => {
       <AboutImages/>
       <AboutForm/>
       <Footer/>
-      <Item/>
 
     </div>
   )

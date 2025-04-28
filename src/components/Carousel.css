@@ -13,7 +13,8 @@
   display: flex;
   justify-content: center;
   align-items:flex-start;
-  z-index: 1;
+  z-index: -1;
+  /* change from 1 to -1 para sa modal */
 }
 
 .carousel-logo img{
@@ -23,7 +24,8 @@
 .swiper {
   width: 100%;
   position: relative;
-  z-index: 2;
+  z-index: 0;
+  /* change from 2 to 0 */
   background-color: transparent;
 }
 

@@ -1,9 +1,13 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import ItemModal from '../components/Item'
 import "./Cards.css";
 
-const Cards = ({ backTitle, backInfo, imgSource }) => {
+const Cards = ({ backTitle, backInfo, imgSource, dataHolder}) => {
   const [isHovered, setIsHovered] = useState(false);
+
+  const handleChick = () => { 
+    dataHolder({ Pname: backTitle,Pinfo: backInfo, Pimage: imgSource });
+  }
 
   const handleToggleHover = () => {
     setIsHovered(!isHovered);
@@ -18,15 +22,15 @@ const Cards = ({ backTitle, backInfo, imgSource }) => {
       <div className={`container ${isHovered ? "hover" : ""}`}>
         <div
           className="front"
-          style={{ backgroundImage: `url(${imgSource})` }}
+          style={{ backgroundImage: `url(${imgSource})`, backgroundColor: "white" }}
         ></div>
         <div className="back">
           <div className="inner">
             <h1>{backTitle}</h1>
             <p>{backInfo}</p>
-						<Link className="card-button">
-							Reserve
-						</Link>
+						<button className="card-button" onClick={() => handleChick()}>
+              Reserve
+            </button>
           </div>
         </div>
       </div>

@@ -1,11 +1,10 @@
 import React, {useState ,  useRef, useEffect} from "react";
-import { Zoom,Pagination, Autoplay, Navigation } from "swiper/modules";
+import { Zoom,Pagination, Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "./Carousel.css";
 import 'swiper/css/zoom';
-import 'swiper/css/navigation';
 const Carousel = ({images, logo}) => {
 
   return (
@@ -37,10 +36,7 @@ const Carousel = ({images, logo}) => {
           stopOnLastSlide: false,
         }}
         
-        navigation={true}
-        modules={[Autoplay,Pagination,Zoom, Navigation]}
-        // onInteraction={handleInteraction}
-        // {...activeIndex === false? autoSlide : {}}
+        modules={[Autoplay,Pagination,Zoom]}
         
         className="mySwiper"
       >

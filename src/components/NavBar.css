@@ -70,6 +70,7 @@ nav{
 }
 
 @media (max-width: 600px) {
+  
   .menu-icon {
     display: block;
     cursor: pointer;
@@ -97,7 +98,7 @@ nav{
   }
 
   .nav-elements ul li {
-    margin-right: unset;
+    margin-right: 30px;
     margin-top: 22px;
   }
 }

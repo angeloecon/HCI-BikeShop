@@ -23,12 +23,14 @@ import S_Works_Svg from '../assets/Svg/S_work_Logo.svg'
 import s_work_Carousel_Img1 from '../assets/Images/S_works/S-Work-Stumpjumper.png';
 import s_work_Carousel_Img2 from '../assets/Images/S_works/S-Work-Epic.png';
 import s_work_Carousel_Img3 from '../assets/Images/S_works/S-Work-Tarmac-SL8.png';
+import SworksVideo from '../assets/Images/S_works/S-works-Video.mp4';
 
 // Canondale
 import CannondaleSvg from '../assets/Svg/Cannondale_Bicycle_Corporation-Logo.wine.svg'
 import canondale_Carousel_Img1 from '../assets/Images/Canondale/C-Habit-4.png';
 import canondale_Carousel_Img2 from '../assets/Images/Canondale/C-Scalpel-1-Lefty.png';
 import canondale_Carousel_img3 from '../assets/Images/Canondale/C-Super-Six-EVO-LAB71-Team.png';
+import CanondaleVideo from '../assets/Images/Canondale/Canondale-Video.mp4'
 
 const Products =  {
   Trek: {
@@ -37,6 +39,7 @@ const Products =  {
     carouselImages: [trek_Carousel_Img1, trek_Carousel_Img2, trek_Carousel_Img3],
     products: [
       { name: "Trek Caliber", info: "Lorem ipsim dolor, sit amet", image: trek_Img1 },
+      // name: "", info: "", image: "", price: "", 
       { name: "Trek Madone", info: "Lorem ipsim dolor, sit amet", image: trek_Img2 },
       { name: "Trek Marlin", info: "Lorem ipsim dolor, sit amet", image: trek_Img3 },
     ],
@@ -49,7 +52,7 @@ const Products =  {
     products: [
       { name: "Giant Anthem Adv", info: "Lorem ipsim dolor, sit amet", image:  giant_Carousel_Img1 },
       { name: "Giant Propel Adv SL", info: "Lorem ipsim dolor, sit amet", image: giant_Carousel_Img2 },
-      { name: "Giant Propel Adv SL", info: "Lorem ipsim dolor, sit amet", image: giant_Carousel_Img3 }
+      { name: "Giant Glory 2 2017", info: "Lorem ipsim dolor, sit amet", image: giant_Carousel_Img3 }
     ],
     video: GiantVideo,
   },
@@ -58,22 +61,22 @@ const Products =  {
     BrandLogo: CannondaleSvg,
     carouselImages: [canondale_Carousel_Img1, canondale_Carousel_Img2, canondale_Carousel_img3], 
     products: [
-      { name: "Canondale Scalpel", info: "Lorem ipsim dolor, sit amet", image: canondale_Carousel_Img1 },
-      { name: "Canondale Scalpel", info: "Lorem ipsim dolor, sit amet", image: canondale_Carousel_Img2 },
-      { name: "Canondale Scalpel", info: "Lorem ipsim dolor, sit amet", image: canondale_Carousel_img3 }
+      { name: "Canondale Habit", info: "Lorem ipsim dolor, sit amet", image: canondale_Carousel_Img1 },
+      { name: "Canondale Scalpel 1 Lefty", info: "Lorem ipsim dolor, sit amet", image: canondale_Carousel_Img2 },
+      { name: "Canondale Super 6 EVO LAB71 Team", info: "Lorem ipsim dolor, sit amet", image: canondale_Carousel_img3 }
     ],
-    video: GiantVideo,
+    video: CanondaleVideo,
   },
   Specialized : {
     BrandTitle: "Specialized",
     BrandLogo: S_Works_Svg,
     carouselImages: [s_work_Carousel_Img1, s_work_Carousel_Img2, s_work_Carousel_Img3], 
     products: [
-      { name: "Specialized Turbo", info: "Lorem ipsim dolor, sit amet", image:  s_work_Carousel_Img1},
-      { name: "Specialized Stumpjumper", info: "Lorem ipsim dolor, sit amet", image: giant_Carousel_Img2 },
-      { name: "Specialized Stumpjumper", info: "Lorem ipsim dolor, sit amet", image: giant_Carousel_Img3 }
+      { name: "Specialized Stumpjumper", info: "Lorem ipsim dolor, sit amet", image: s_work_Carousel_Img1},
+      { name: "Specialized Epic", info: "Lorem ipsim dolor, sit amet", image: s_work_Carousel_Img2 },
+      { name: "Specialized Tarmac SL8", info: "Lorem ipsim dolor, sit amet", image: s_work_Carousel_Img3 }
     ],
-    video: GiantVideo,
+    video: SworksVideo,
   }
 }
 

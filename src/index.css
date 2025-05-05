@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Racing+Sans+One&family=Special+Gothic+Expanded+One&display=swap');
 :root{
-  --heading-font: 'Racing Sans One', "Special Gothic Expanded One", sans-serif;
+  --heading-font: "Special Gothic Expanded One", sans-serif;
 }
 html{
   scroll-behavior: smooth;

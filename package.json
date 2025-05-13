@@ -3,14 +3,11 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://angeloecon.github.io/HCI-BikeShop/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy":"SET PUBLIC_URL=/HCI-BikeShop/ && gh-pages -d dist"
+    "preview": "vite preview"
   },
   "dependencies": {
     "@splinetool/react-spline": "^4.0.0",

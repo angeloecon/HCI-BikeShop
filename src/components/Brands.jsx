@@ -43,22 +43,18 @@ const Products = {
     products: [
       {
         name: "Trek Madone",
-        info: "Lorem ipsim dolor, sit amet",
         image: trek_Carousel_Img1,
         price: "99,990.00",
         info: "A road bike known for its combination of speed and comfort. It features a 200 Series Alpha Aluminum frame with KVF (Kammtail Virtual Foil) tube shape, providing aerodynamic efficiency.",
       },
-      // name: "", info: "", image: "", price: "",
       {
         name: "Trek Marlin 7",
-        info: "Lorem ipsim dolor, sit amet",
         image: trek_Carousel_Img2,
         price: "39,990",
         info:"Is where race-ready mountain biking starts, with a lightweight RockShox fork and upgraded parts—perfect for new riders seeking a fast XC hardtail that competes with higher-end models."
       },
       {
         name: "Trek Supercaliber 9.9 Gen 1",
-        info: "Lorem ipsim dolor, sit amet",
         image: trek_Carousel_Img3,
         price: "636,676.63",
         info: "The X-Caliber 9 is the top model in the X-Caliber series—a race-ready cross country bike with a RockShox Recon fork, 1x12 Shimano XT/SLX drivetrain, and wide-range cassette, perfect for fast singletrack riders."
@@ -77,21 +73,18 @@ const Products = {
     products: [
       {
         name: "Giant Anthem Adv",
-        info: "Lorem ipsim dolor, sit amet",
         image: giant_Carousel_Img1,
         price: "431,870.40",
         info: "Built for modern XC racing, this full-composite bike climbs and descends with speed and control, thanks to FlexPoint Pro suspension and race-ready geometry.",
       },
       {
         name: "Giant Propel Adv SL",
-        info: "Lorem ipsim dolor, sit amet",
         image: giant_Carousel_Img2,
         price: "404,525.36",
         info: "AeroSystem Shaping, a result of CFD analysis and dynamic wind-tunnel testing, optimizes aerodynamic performance at every yaw angle. The truncated ellipse airfoil tube shapes and Contact SLR Aero cockpit produce outstanding overall aero performance.",
       },
       {
         name: "Giant Glory 2 2017",
-        info: "Lorem ipsim dolor, sit amet",
         image: giant_Carousel_Img3,
         price: "251,924.40",
         info: "With 200mm of Maestro travel, a 203mm fork, and three flip chips for full adjustability, this DH bike delivers pro-level control and a customizable ride—plus a mullet setup with the option for full 29-inch wheels.",
@@ -110,21 +103,18 @@ const Products = {
     products: [
       {
         name: "Canondale Habit",
-        info: "Lorem ipsim dolor, sit amet",
         image: canondale_Carousel_Img1,
         price: "110,962.34",
         info: "A trail mountain bike that is primed for grinding climbs, mashing flats, and ripping descents. One for all, and all for fun!",
       },
       {
         name: "Canondale Scalpel 1 Lefty",
-        info: "Lorem ipsim dolor, sit amet",
         image: canondale_Carousel_Img2,
         price: "369,367.62",
         info: "With the most advanced XC suspension and geometry, and rowdy-ready spec, the new Scalpel redefines cross-country speed – again.",
       },
       {
         name: "Canondale Super 6 EVO LAB71 Team",
-        info: "Lorem ipsim dolor, sit amet",
         image: canondale_Carousel_img3,
         price: "734,631.35",
         info: "Our very best Series 0 carbon construction, 100% team spec, and fanatical attention to detail, all found in the 2025 EF Pro Cycling Team Edition LAB71 SuperSix EVO.",
@@ -143,21 +133,18 @@ const Products = {
     products: [
       {
         name: "Specialized Stumpjumper",
-        info: "Lorem ipsim dolor, sit amet",
         image: s_work_Carousel_Img1,
         price: "613,250",
         info: "Is dressed to impress. SRAM's XX1 Eagle AXS wireless electronic groupset handles shifting duties while FOX Factory suspension delivers a magic carpet-smooth ride.",
       },
       {
         name: "Specialized Epic",
-        info: "Lorem ipsim dolor, sit amet",
         image: s_work_Carousel_Img2,
         price: "669,000",
         info: "Mixing hardtail efficiency and full-suspension capability to impressively quick results, has always been defined by obsessive commitment to speed. Well, that and over 100 World Cup wins and podiums too.",
       },
       {
         name: "Specialized Tarmac SL8",
-        info: "Lorem ipsim dolor, sit amet",
         image: s_work_Carousel_Img3,
         price: "724,749.44",
         info: "A combination of aerodynamics, lightweight, and ride quality previously thought impossible. After eight generations and over two decades of development, it’s more than the fastest Tarmac ever - it’s the world’s fastest race bike. ",

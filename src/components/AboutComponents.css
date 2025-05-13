@@ -25,9 +25,6 @@
 padding: 30px 0;
 }
 
-.logo-slider-holder h2{
-  font-family: "Racing Sans One", sans-serif;
-}
 
 .about-info{
   display: flex;
@@ -82,34 +79,32 @@ padding: 30px 0;
   margin: 1rem 0;
 }
 
-form{
+.about-form{
   position: relative;
   margin-top: 3rem;
 }
-form > div {
+.about-form > div {
   clear: both;
   overflow: hidden;
   padding: 1px;
   margin: 0 0 10px 0;
 }
-form > div > fieldset > div > div {
+.about-form > div > fieldset > div > div {
   margin: 0 0 5px 0;
 }
 
-form > div > div,
-form > div > fieldset > div {
+.about-form > div > div,
+.about-form > div > fieldset > div {
   width: 75%;
   float: right;
 }
-form > div > fieldset label {
+.about-form > div > fieldset label {
   font-family: "Racing Sans One";
 }
-textarea{
+.about-form > textarea{
   resize: none;
 }
-input[type=text],
-input[type=email],
-textarea {
+.about-inputs {
 	width: 100%;
   border-top: 1px solid #ccc;
   border-left: 1px solid #ccc;
@@ -119,20 +114,19 @@ textarea {
   padding: 5px;
   text-align: left;
 }
-input[type=text],
-input[type=email] {
+.about-textfield ,
+.about-email {
   width: 100%;
 }
-input[type=text]:focus,
-input[type=email]:focus,
-textarea:focus {
+
+.about-inputs:focus {
   outline: 0;
   border-color: #4697e4;
 }
 
-form > div > label {
+.about-form > div > label {
   text-align: left;
-  font-family: "Racing Sans One";
+  font-family: var(--heading-font);
 }
 
 .button-form{
@@ -153,22 +147,22 @@ form > div > label {
 }
 
 @media (max-width: 600px) {
-  form > div {
+  .about-form > div {
     margin: 0 0 15px 0; 
   }
-  form > div > label,
+  .about-form > div > label,
   legend {
 	  width: 100%;
     float: none;
     margin: 0 0 5px 0;
   }
-  form > div > div,
-  form > div > fieldset > div {
+  .about-form > div > div,
+  .about-form > div > fieldset > div {
     width: 100%;
     float: none;
   }
-  input[type=text],
-  input[type=email]
+.about-textfield ,
+.about-email
   {
     width: 100%; 
   }

@@ -35,9 +35,9 @@
 
 .back{
   background: #cedce7;
-  background: -webkit-linear-gradient(45deg,  #cedce7 0%,#596a72 100%);
-  background: -o-linear-gradient(45deg,  #cedce7 0%,#596a72 100%);
-  background: linear-gradient(45deg,  #cedce7 0%,#596a72 100%);
+  background: -webkit-linear-gradient(45deg,  #e3e9f0 0%,#fdfdfd 100%);
+  background: -o-linear-gradient(45deg,  #e3e9f0 0%,#fdfdfd 100%);
+  background: linear-gradient(45deg,  #e3e9f0 0%,#fdfdfd 100%);
 }
 
 .front:after{
@@ -159,4 +159,10 @@
     width: 100%;
     margin: 0 0 2rem 0;
   }
+}
+
+.card-button{
+  cursor: pointer;
+  padding: 10px ;
+  background-color: transparent;
 }

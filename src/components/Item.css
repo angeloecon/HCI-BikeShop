@@ -1,5 +1,11 @@
+:root {
+  --primary: #0077FF;
+  --secondary: #0052bd;
+  --dark: #000;
+}
+
 .darkBG{
-  background-color: rgba(122, 119, 119, 0.2);
+  background-color: rgba(122, 119, 119, 0.9);
   /* background-color: rgb(0, 0, 0); */
   width: 100%;
   height: 100vh;
@@ -28,48 +34,163 @@
 
 }
 
-
 .modal-image img{
+    width: 100%;
+    background-color: white;
+}
+
+.modal-content {
+  padding: 20px 0;
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+}
+
+.modal-text h1{
+  font-size: 2rem;
+  margin-top: 0;
+}
+
+.modal-text p {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+  padding: 0 0.4rem;
+}
+
+@media screen {
   
+}
+
+.modal-form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+
+/* form-css */
+
+.form__group {
+  position: relative;
+  padding: 15px 0 0;
+  margin-top: 10px;
+  width: 50%;
+}
+
+.form__field {
+  font-family: inherit;
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid gray;
+  outline: 0;
+  font-size: 1rem;
+  color: #000;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+  text-align: left;
+}
+
+.form__field::placeholder {
+  color: transparent;
+}
+
+.form__field:placeholder-shown ~ .form__label {
+  font-size: 1rem;
+  cursor: text;
+  top: 20px;
+}
+
+.form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: gray;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield; /* Firefox */
+}
+
+.form__field:focus ~ .form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: rgb(0, 0, 0);
+  font-weight: 700;
+}
+
+.form__field:focus {
+  padding-bottom: 6px;
+  border-width: 3px;
+  border-image: linear-gradient(to left,  rgb(221, 221, 221), rgb(0, 0, 0));
+  border-image-slice: 1;
+  font-size: 1rem;
+}
+
+/* Reset input */
+.form__field:required,
+.form__field:invalid {
+  box-shadow: none;
+}
+
+.item-form-btn{
+  padding: 0.5rem 1rem;
+  
+}
+
+.item-btn-container{
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
-    background-color: white;
-
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 0.5rem;
 }
 
-/* .modalHeader {
-  height: 50px;
-  background: white;
-  overflow: hidden;
-  border-top-left-radius: 16px;
-  border-top-right-radius: 16px;
-}  */
-
-
-
-
-
-/* .modal-background{
-  width: 100%;
-  height: 100vh;
-  
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 1000;
+.error-message {
+  color: red;          
+  font-size: 0.8rem;  
+  margin-top: 0.25rem;
 }
 
-.item-container{
+.success-message{
+  color: green;
+  font-size: 0.8rem;
+  margin: 0.1rem;
+}
 
-  gap: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: gray;
+.submit-btn, .cancel-btn{
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
 
-  padding: 1rem;
-  flex-wrap: wrap;
-} */
+.cancel-btn{
+  background-color: rgb(255, 0, 0);
+}
+
+.cancel-btn:hover{
+  background-color: rgb(220, 0, 0);
+}
+
+.submit-btn{
+  background-color: var(--primary);
+}
+
+.submit-btn:hover{
+  background-color: var(--secondary);
+}

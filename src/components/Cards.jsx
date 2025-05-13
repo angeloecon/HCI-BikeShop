@@ -2,11 +2,11 @@ import React, { useState } from "react";
 import ItemModal from '../components/Item'
 import "./Cards.css";
 
-const Cards = ({ backTitle, backInfo, imgSource, dataHolder}) => {
+const Cards = ({  dataHolder, product}) => {
   const [isHovered, setIsHovered] = useState(false);
 
   const handleChick = () => { 
-    dataHolder({ Pname: backTitle,Pinfo: backInfo, Pimage: imgSource });
+    dataHolder(product);
   }
 
   const handleToggleHover = () => {
@@ -22,14 +22,14 @@ const Cards = ({ backTitle, backInfo, imgSource, dataHolder}) => {
       <div className={`container ${isHovered ? "hover" : ""}`}>
         <div
           className="front"
-          style={{ backgroundImage: `url(${imgSource})`, backgroundColor: "white" }}
+          style={{ backgroundImage: `url(${product.image})`, backgroundColor: "white" }}
         ></div>
         <div className="back">
           <div className="inner">
-            <h1>{backTitle}</h1>
-            <p>{backInfo}</p>
+            <h1>{product.name}</h1>
+            {/* <p>{backInfo}</p> */}
 						<button className="card-button" onClick={() => handleChick()}>
-              Reserve
+              See details
             </button>
           </div>
         </div>

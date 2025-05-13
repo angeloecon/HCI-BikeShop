@@ -35,7 +35,7 @@ const Footer = () => {
         <div className="social-media">
           <h3>Follow us</h3>
           <div className="social-icons">
-            <a className="social-icon social-icon--facebook">
+            <a className="social-icon social-icon--facebook" href="https://www.facebook.com/formenteraluis.12" target="_blank">
               <i className="fa-brands fa-facebook-f"></i>
               <div className="tooltip">Facebook</div>
             </a>

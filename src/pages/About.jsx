@@ -2,6 +2,7 @@ import React from 'react'
 import AboutImages from '../components/AboutImages'
 import AboutForm from '../components/AboutForm'
 import Footer from '../components/Footer'
+
 import './About.css'
 
 
@@ -12,7 +13,7 @@ const About = () => {
       <AboutImages/>
       <AboutForm/>
       <Footer/>
-
+      
     </div>
   )
 }

@@ -24,11 +24,11 @@ function Products() {
 
   useEffect(() => {
     const hash = location.hash;
-    console.log(hash);
-    console.log(location);
-    //
+    // console.log(hash);
+    // console.log(location);
+    
     if (hash) {
-      const targetElement = document.querySelector(hash);
+      // const targetElement = document.querySelector(hash);
       // if (targetElement) {
       //   targetElement.scrollIntoView({ behavior: 'smooth' });
       // }
@@ -65,9 +65,7 @@ function Products() {
                 return (
                   <Cards
                     key={index}
-                    backTitle={product.name}
-                    backInfo={product.info}
-                    imgSource={product.image}
+                    product={product}
                     setIsOpen={setIsOpen}
                     dataHolder={dataHolder}
 

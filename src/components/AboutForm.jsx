@@ -1,6 +1,7 @@
 import {React, useState, useEffect} from "react";
 import {useForm} from "react-hook-form";
 import useWeb3Forms from "@web3forms/react";
+import "./AboutComponents.css";
 
 const AboutForm = () => {
   const {register, reset, handleSubmit} = useForm();
@@ -41,8 +42,8 @@ const AboutForm = () => {
           us. It's an honor to support you in your journey.
         </p>
       </div>
-      <div className="about-form">
-      <form onSubmit={handleSubmit(onSubmit)}>
+
+      <form className="about-form" onSubmit={handleSubmit(onSubmit)}>
         <div>
           <label className="desc" htmlFor="Field1">
             Full Name
@@ -50,9 +51,9 @@ const AboutForm = () => {
           <div>
             <input
              {...register("name", { required: true })}
-              required
+              required 
               type="text"
-              className="field text fn"
+              className="about-textfield about-inputs"
               size="8"
               tabIndex={1}
             />
@@ -65,6 +66,7 @@ const AboutForm = () => {
           <div>
             <input
               {...register("email", { required: true })}
+              className="about-email about-inputs"
               required
               type="email"
               spellCheck="false"
@@ -80,6 +82,7 @@ const AboutForm = () => {
           <div>
             <textarea
             {...register("message", { required: true })}
+            className="about-textarea about-inputs"
               required
               spellCheck="true"
               rows="10"
@@ -92,9 +95,9 @@ const AboutForm = () => {
           Submit
         </button>
       </form>
-      <div>{result}</div>
+      {/* <div>{result}</div> */}
     </div>
-    </div>
+
   );
 };
 

@@ -25,12 +25,18 @@ const Item = ({ setIsOpen, product }) => {
       setIsSuccess(true);
       setResult(msg);
       reset();
+      setTimeout();
     },
     onError: (msg) => {
       setIsSuccess(false);
       setResult(msg);
     },
   });
+
+  const timer = setTimeout(() => {
+    setIsSuccess(false);    
+  }, 2500
+);
 
   return (
     <div className="darkBG">
@@ -90,7 +96,7 @@ const Item = ({ setIsOpen, product }) => {
                     {errors["Contact Number"].message}
                   </p>
                 )}
-                <p>Format: 11 digits</p>
+                <p className="format-num">Format: 11 digits</p>
               </div>
               <div className="item-btn-container">
                 <button className="item-form-btn submit-btn" type="submit">

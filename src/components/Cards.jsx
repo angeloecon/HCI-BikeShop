@@ -27,7 +27,7 @@ const Cards = ({  dataHolder, product}) => {
         <div className="back">
           <div className="inner">
             <h1>{product.name}</h1>
-            {/* <p>{backInfo}</p> */}
+            
 						<button className="card-button" onClick={() => handleChick()}>
               See details
             </button>

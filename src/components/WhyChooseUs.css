@@ -53,10 +53,9 @@ background: linear-gradient(to right, #f9ede4, #fdfdfd);
   min-height: 20rem;
 }
 
-.choose-text{
- 
- 
-}
+/* .choose-text{
+
+} */
 
 .choose-header{
   padding: 2rem 0;
@@ -92,4 +91,10 @@ background: linear-gradient(to right, #f9ede4, #fdfdfd);
 .observe-item.viewport {
   opacity: 1;
   transform: translateX(0);
+}
+
+@media (max-width: 600px) {
+  .choose-content img {
+    height: 20rem
+  };
 }

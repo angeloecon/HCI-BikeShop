@@ -23,6 +23,7 @@ const AboutForm = () => {
       setIsSuccess(true);
       setResult(msg);
       reset();
+      timer();
     },
     onError: (msg, data) => {
       setIsSuccess(false);
@@ -30,7 +31,9 @@ const AboutForm = () => {
     },
   });
 
-  
+  const timer = setTimeout(() => {
+    setIsSuccess(false);
+  }, 2500);
 
 
   return (
@@ -91,11 +94,16 @@ const AboutForm = () => {
             ></textarea>
           </div>
         </div>
-        <button type="submit" className="button-form">
+        <div>
+          <button type="submit" className="button-form">
           Submit
         </button>
+        </div>
+         <div className="message-container">
+          {isSuccess && <p className="success-message">{result}</p>}
+         </div>
       </form>
-      {/* <div>{result}</div> */}
+     
     </div>
 
   );

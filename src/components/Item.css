@@ -51,14 +51,10 @@
   margin-top: 0;
 }
 
-.modal-text p {
+.modal-text p, .format-num {
   font-size: 1rem;
   margin: 0.5rem 0;
   padding: 0 0.4rem;
-}
-
-@media screen {
-  
 }
 
 .modal-form{
@@ -150,7 +146,6 @@ input[type="number"] {
   padding: 0.5rem 1rem;
   
 }
-
 .item-btn-container{
     width: 100%;
     display: flex;
@@ -160,16 +155,17 @@ input[type="number"] {
     padding: 0.5rem;
 }
 
-.error-message {
-  color: red;          
+.success-message,.error-message{
   font-size: 0.8rem;  
   margin-top: 0.25rem;
 }
 
+.error-message {
+  color: red;          
+}
+
 .success-message{
   color: green;
-  font-size: 0.8rem;
-  margin: 0.1rem;
 }
 
 .submit-btn, .cancel-btn{
@@ -193,4 +189,10 @@ input[type="number"] {
 
 .submit-btn:hover{
   background-color: var(--secondary);
+}
+
+@media (max-width: 600px) {
+  .centered{
+    width: 100%;
+  }
 }

@@ -35,10 +35,11 @@ padding: 30px 0;
 
 .about-text{
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   margin-bottom: 1rem;
+  gap: 5rem;
 }
 
 .about-text p{
@@ -80,15 +81,16 @@ padding: 30px 0;
 }
 
 .about-form{
-  position: relative;
   margin-top: 3rem;
 }
+
 .about-form > div {
   clear: both;
   overflow: hidden;
   padding: 1px;
   margin: 0 0 10px 0;
 }
+
 .about-form > div > fieldset > div > div {
   margin: 0 0 5px 0;
 }
@@ -138,15 +140,25 @@ padding: 30px 0;
   color: #fff;
   background-color: #5F91FC;
   width: 75%;
-  position: absolute;
   right: 0;
   border: none;
   cursor: pointer;
+  float: right;
 }
 
 .button-form:hover{
   background-color: #fff;
   color: black;
+}
+.success-message{
+  color: green;
+  font-size: 0.8rem;
+  margin: 0.1rem;
+}
+
+.message-container{
+    width: 75%;
+    float: right;
 }
 
 @media (max-width: 600px) {
@@ -164,10 +176,20 @@ padding: 30px 0;
     width: 100%;
     float: none;
   }
+
+  .button-form{
+    width: 100%;
+  }
 .about-textfield ,
 .about-email
   {
     width: 100%; 
+  }
+
+  .message-container{
+    width: 75%;
+    width: 100%;
+    float: none;
   }
 }
 @media (min-width: 1200px) {
